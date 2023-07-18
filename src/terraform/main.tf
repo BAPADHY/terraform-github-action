@@ -5,12 +5,12 @@ terraform {
       version = "3.65.0"
     }
   }
-backend "azurerm" {
+backend"azurerm" {
   resource_group_name  = "friday-demo-rg"
-  storage_account_name = "sttfstatemgt01"
+  storage_account_name = "barshast12"
   container_name       = "tfstate"
   key                  = "demo.terraform.tfstate"
-}
+  }
 }
 
 provider "azurerm" {
