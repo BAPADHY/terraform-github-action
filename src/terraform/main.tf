@@ -6,7 +6,7 @@ provider "azurerm" {
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
   name     = "demo-rg-resources"
-  location = "West Europe"
+  location = "East US"
 }
 
 resource "azurerm_virtual_network" "Vnet" {
