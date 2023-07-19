@@ -1,15 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "=3.0.0"
-    }
-  }
-}
-
- 
-
-# Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
 }
@@ -48,7 +36,7 @@ resource "azurerm_network_interface" "nic" {
 }
 
 resource "azurerm_windows_virtual_machine" "vm" {
-  name                = "tfvm-machine"
+  name                = "tfvm1-machine"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_F2"
